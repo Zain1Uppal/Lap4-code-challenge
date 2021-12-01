@@ -11,8 +11,6 @@
 ### Usage
 
 * Run `pipenv run dev` to launch server.
-* Run `pipenv run test` to launch test suite.
-
 
 
 ## Wins & Challenges
