@@ -5,8 +5,12 @@ name = "pypi"
 
 [packages]
 flask = "*"
+gunicorn = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.9"
+
+[scripts]
+dev = "flask run"
