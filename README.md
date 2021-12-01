@@ -6,7 +6,8 @@
 
 * Clone or download the repo.
 * Open terminal and navigate to repo folder.
-* then run `pipenv shell`, then `pipenv install -r requirements.txt`
+* run `pipenv install -r requirements.txt` to install dependencies
+* then run `pipenv shell` to enter the virtual environment
 * Alternatively install with your package manager of choice using the provided `requirements.txt`
 
 ### Usage
