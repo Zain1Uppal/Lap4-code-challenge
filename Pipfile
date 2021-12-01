@@ -16,3 +16,4 @@ python_version = "3"
 
 [scripts]
 dev = "bash -c \"export FLASK_ENV='development' && flask run --host=0.0.0.0\""
+start = "gunicorn wsgi:app"
