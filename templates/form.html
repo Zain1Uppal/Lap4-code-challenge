@@ -9,7 +9,7 @@
         <section id="generator">
             <form id="submission" action="/generate" method="POST">
                 <span>URL to shorten:</span>
-                <input type="url" id="input_url" name="input_url" placeholder="https://www.example.com">
+                <input type="url" id="input_url" name="input_url" placeholder="https://www.example.com" required>
                 <input type="submit" id="generatorSubmit" value='GEN'>
             </form>
             {% if shortUrl and base_url %}
