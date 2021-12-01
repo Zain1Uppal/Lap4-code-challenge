@@ -2,10 +2,11 @@
 {% block title %}{{title}}{% endblock %}
 
 {% block content %}
-        <h1>what is the url you want to shorten</h1>
+        <h1>Generate a short url!</h1>
         <section id="generator">
             <form id="submission" action="/generate" method="POST">
-                <span id="register">
+                <span id="input">
+                    <span>URL to shorten:</span>
                     <input type="url" id="input_url" name="input_url" placeholder="https://www.example.com">
                 </span>
                 {% if shortUrl and base_url %}
