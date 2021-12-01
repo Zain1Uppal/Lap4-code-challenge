@@ -4,6 +4,10 @@ body, html {
     margin: 0;
 }
 
+body {
+    text-align: center;
+}
+
 nav { 
     width: 100%;
     font-size: 2em;
@@ -13,4 +17,11 @@ nav {
 
 a { 
     text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
 }
