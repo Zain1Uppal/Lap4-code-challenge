@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, redirect
+from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 import random, string
 
 app = Flask(__name__)
+CORS(app)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///urls.db"
 db = SQLAlchemy(app)
