@@ -4,7 +4,7 @@ import random, string
 
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///example.sqlite"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///urls.db"
 db = SQLAlchemy(app)
 
 class Shorturl(db.Model):

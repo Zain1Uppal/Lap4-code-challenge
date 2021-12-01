@@ -9,10 +9,10 @@
                     <span>URL to shorten:</span>
                     <input type="url" id="input_url" name="input_url" placeholder="https://www.example.com">
                 </span>
-                {% if shortUrl and base_url %}
-                    <a id="shortUrl" target='_blank' href='{{base_url}}visit/{{shortUrl}}'>{{base_url}}visit/{{shortUrl}}</a>
-                {% endif %}
                 <input type="submit" id="generatorSubmit" value='generate'>
             </form>
+            {% if shortUrl and base_url %}
+                <a id="shortUrl" target='_blank' href='{{base_url}}visit/{{shortUrl}}'>{{base_url}}visit/{{shortUrl}}</a>
+            {% endif %}
         </section>
 {% endblock %}
