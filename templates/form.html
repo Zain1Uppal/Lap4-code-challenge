@@ -1,4 +1,7 @@
 {% extends "layout.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/generator.css') }}">
+{% endblock head %}
 {% block title %}{{title}}{% endblock %}
 
 {% block content %}
@@ -12,7 +15,10 @@
                 <input type="submit" id="generatorSubmit" value='generate'>
             </form>
             {% if shortUrl and base_url %}
-                <a id="shortUrl" target='_blank' href='{{base_url}}visit/{{shortUrl}}'>{{base_url}}visit/{{shortUrl}}</a>
+                <div class="result">
+                    <span>Here's your URL:</span>
+                    <a id="shortUrl" target='_blank' href='{{base_url}}visit/{{shortUrl}}'>{{base_url}}visit/{{shortUrl}}</a>
+                </div>
             {% endif %}
         </section>
 {% endblock %}
