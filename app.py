@@ -27,6 +27,8 @@ def home():
 def generate():
     if request.method == 'POST':
         received_url = request.form['input_url']
+        if not received_url:
+            return render_template('form.html', shortUrl= '', title='Generator')
         short_url = ''.join(random.choices(string.ascii_letters + string.digits, k = 5))
         db.session.add(Shorturl(url=received_url, shortenUrl=short_url))
         db.session.commit()
