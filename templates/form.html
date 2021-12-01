@@ -8,15 +8,13 @@
         <h1>Generate a short url!</h1>
         <section id="generator">
             <form id="submission" action="/generate" method="POST">
-                <span id="input">
-                    <span>URL to shorten:</span>
-                    <input type="url" id="input_url" name="input_url" placeholder="https://www.example.com">
-                </span>
+                <span>URL to shorten:</span>
+                <input type="url" id="input_url" name="input_url" placeholder="https://www.example.com">
                 <input type="submit" id="generatorSubmit" value='generate'>
             </form>
             {% if shortUrl and base_url %}
-                <div class="result">
-                    <span>Here's your URL:</span>
+                <div id="result">
+                    <span>Your shortened URL:</span>
                     <a id="shortUrl" target='_blank' href='{{base_url}}visit/{{shortUrl}}'>{{base_url}}visit/{{shortUrl}}</a>
                 </div>
             {% endif %}
