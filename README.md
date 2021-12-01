@@ -1,17 +1,19 @@
 # Lap4-code-challenge
 
-## Installation $ Usage
+## Installation & Usage
 
 ### Installation
 
 * Clone or download the repo.
 * Open terminal and navigate to repo folder.
 * then run `pipenv shell`, then `pipenv install -r requirements.txt`
+* Alternatively install with your package manager of choice using the provided `requirements.txt`
 
 ### Usage
 
-* Run `pipenv run dev` to launch server.
-
+* Run `pipenv run dev` to launch the dev server.
+* Run `pipenv run start` to launch a production server with gunicorn.
+* Note that the database is created locally when the app is run, and gets stored in a file called `urls.db`
 
 ## Wins & Challenges
 
@@ -22,4 +24,4 @@
 
 ### Challenges
 
-* displaying the url and being able to use it as a link
+* finding out what request method gave us the correct base url so we could prepend it to the url returned to the user
