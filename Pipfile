@@ -11,7 +11,7 @@ flask-sqlalchemy = "*"
 [dev-packages]
 
 [requires]
-python_version = "3.9"
+python_version = "3"
 
 [scripts]
 dev = "bash -c \"export FLASK_ENV='development' && flask run --host=0.0.0.0\""
