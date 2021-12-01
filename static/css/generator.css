@@ -1,0 +1,45 @@
+#generator {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#submission, #result {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#submission > *, #result > * {
+    margin: 0 5px;
+}
+
+#input_url {
+    width: 50%;
+    padding: 6px;
+    background-color: var(--primary);
+    color: var(--raisin-black);
+    border-style: outset;
+    border-radius: 20px;
+    border-color: var(--secondary);
+}
+
+#generatorSubmit {
+    font-size: 0.9em;
+    width: 60px;
+    padding: 5px;
+    background-color: var(--primary);
+    color: var(--raisin-black);
+    border-style: outset;
+    border-radius: 20px;
+    border-color: var(--secondary);
+}
+
+#generatorSubmit:hover {
+    cursor: pointer;
+    background-color: var(--secondary);
+    opacity: 0.6;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head%}{% endblock head%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/index.css') }}">
+    <title>URLazy | {% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/generate">Generator</a>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+    <footer>
+        &copy; Calum & Zain 2021
+    </footer>
+</body>
+</html>
