@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
+from werkzeug import exceptions
 import random, string
 
 # Set up the app
@@ -50,3 +51,11 @@ def visit(surl):
         return redirect(f'{full_url}', code=302)   
     else:
         return redirect('/')
+
+@app.errorhandler(exceptions.NotFound)
+def handle_404(err):
+    return render_template('errors/404.html', title="Uh Oh!"), 404
+
+@app.errorhandler(exceptions.InternalServerError)
+def handle_500(err):
+    return render_template('errors/500.html', title="Uh Oh!"), 500
